@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form属性示例</title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        span {
+            color: red;
+        }
+        
+        legend {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生信息</h1>
+    <fieldset style="width:350px">
+        <legend>学生档案</legend>
+        <form id="testform" method="get" action="#S">
+            姓名：</br>
+            <input type="text" name="name1" required="required" placeholder="请输入姓名" autocomplete="on" />
+            <span>*</span>
+            <br/> 学号:
+
+            </br>
+            <input type="tel" name="nunber1" placeholder="请输入学号" required>
+            <span>*</span>
+            </br>
+
+
+            手机号码：</br>
+            <input type="tel" name="nunber2" placeholder="请输入手机号" required>
+            <span>*</span>
+            </br>
+
+
+            邮箱地址：</br>
+            <input type="email" name="email" placeholder="请输入邮箱地址" required>
+            <span>*</span>
+            </br>
+
+
+            录取学校：<br>
+            <input type="search" name="sea1" list="names" />
+            <datalist id="names">
+                <option>河北师范大学</option>
+                <option>河北师范大学</option>
+                <option>河北师范大学</option>
+                <option>河北师范大学</option>
+                <option>河北师范大学</option>
+            </datalist> </br>
+            入学成绩：
+            </br>
+            <input type="text" name="two" /> <br/> 入学时间:
+            </br>
+            <input type="date" name="three" />
+            </br>
+            </br>
+            <input type="button" value="提交" style="height: px; width: 141px; background-color: rgb(226, 222, 222);" />
+
+        </form>
+
+    </fieldset>
+</body>
+<script>
+</script>
+
+</html>
